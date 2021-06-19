@@ -11,7 +11,9 @@ namespace Processor_s_Models.Entities
         public string FirstName { get; set; }
         public string  LastName { get; set; }
         public string FullName { get { return LastName + " " + FirstName; } }
-        public Role MyProperty { get; set; }
-
+        public Role Role { get; set; }
+        public string Address { get; set; }
+        public string  PhoneNo { get; set; }
+        public string EmailAddress { get; set; }
     }
 }
