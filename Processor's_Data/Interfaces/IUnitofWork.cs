@@ -6,20 +6,18 @@ using System.Threading.Tasks;
 
 namespace Processor_s_Data.Interfaces
 {
-    interface IUnitofWork
+    public interface IUnitOfWork : IDisposable
     {
-        public interface IUnitOfWork : IDisposable
-        {
-            Task Save();
-        }
-        public interface IUnitofWork : IDisposable
-        {
-            IRepository<TEntity> GetRepository<TEntity>() where TEntity : class;
-            Task<int> SaveChangesAsync();
-        }
-        public interface IUnitofWork<TContext> : IUnitofWork where TContext : DbContext
-        {
-            TContext Context { get; }
-        }
+        Task Save();
     }
+    public interface IUnitofWork : IDisposable
+    {
+        IRepository<TEntity> GetRepository<TEntity>() where TEntity : class;
+        Task<int> SaveChangesAsync();
+    }
+    public interface IUnitofWork<TContext> : IUnitofWork where TContext : DbContext
+    {
+        TContext Context { get; }
+    }
+   
 }
