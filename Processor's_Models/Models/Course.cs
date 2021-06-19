@@ -8,7 +8,9 @@ namespace Processor_s_Models.Models
     {
         public int CourseId { get; set; }
         public string CourseCode { get; set; }
-        public string CourseTitle { get; set; }
+        public string CourseName { get; set; }
         public short UnitLoad { get; set; }
+
+        public int DeptId { get; set; }
     }
 }
