@@ -9,5 +9,7 @@ namespace Processor_s_Models.Entities
     {
         [Key]
         public long OrderNumber { get; set; }
+        public long StudentId { get; set; }
+        public virtual User Student { get; set; }
     }
 }

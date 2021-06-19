@@ -13,68 +13,7 @@ using System.Threading.Tasks;
 namespace Processor_s_Data.Repo_s
 
 {
-    //public class BaseRepository<T> : IBaseRepository<T> where T : class
-    //{
-    //    protected readonly AppDbContext _context;
-    //    private readonly DbSet<T> _dbset;
-    //    public BaseRepository(AppDbContext context)
-    //    {
-    //        this._context = context;
-    //        this._dbset = _context.Set<T>();
-    //    }
-
-    //    public T Add(T Entity)
-    //    {
-    //        var bb = _dbset.Add(Entity);
-    //       return bb.Entity;
-    //    }
-
-    //    public T Exist(Expression<Func<T, bool>> Args)
-    //    {
-    //        var qury = _dbset.AsQueryable();
-    //        var Entity = qury.Where(Args).FirstOrDefault();
-    //        return Entity;
-    //    }
-
-    //    public IEnumerable<T> FindAll(Expression<Func<T, bool>> Args)
-    //    {
-    //        var qury = _dbset.AsQueryable();
-    //        var Entity =  qury.Where(Args).ToList();
-    //        return Entity;
-    //    }
-    //    public T Find(Expression<Func<T, bool>> Args)
-    //    {
-    //        var qury = _dbset.AsQueryable();
-    //        var Entity = qury.Where(Args).FirstOrDefault();
-    //        return Entity;
-    //    }
-
-    //    public IEnumerable<T>  GetAll()
-    //    {
-    //        var qury = _dbset.AsQueryable();
-    //        var Entity = qury.ToList();
-    //        return Entity;
-    //    }
-
-    //    public T GetbyId(int Id)
-    //    {
-    //      var Entity=  _dbset.Find(Id);
-    //        return Entity;
-    //    }
-
-    //    public void Remove(int id)
-    //    {
-    //        var Entity = _dbset.Find(id);
-    //         _dbset.Remove(Entity);
-    //    }
-
-    //    public T Update(T Entity)
-    //    {
-    //      var UpdatedEntity =  _dbset.Update(Entity);
-    //        return UpdatedEntity.Entity;
-    //    }
-
-    //}
+  
     public abstract class BaseRepository<T> : IReadRepository<T> where T : class
     {
         protected readonly ProcessorContext
