@@ -11,8 +11,5 @@ namespace Transcript_Processsor.Models.Models
         public string FacultyName { get; set; }
 
         public virtual ICollection<Department> Departments { get; set; }
-        public virtual ICollection<Course> Courses { get; set; }
-        public virtual ICollection<User> Users { get; set; }
-
     }
 }
