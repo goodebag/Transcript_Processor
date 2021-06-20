@@ -11,8 +11,5 @@ namespace Processor_s_Models.Models
         public string FacultyName { get; set; }
 
         public virtual ICollection<Department> Departments { get; set; }
-        public virtual ICollection<Course> Courses { get; set; }
-        public virtual ICollection<User> Users { get; set; }
-
     }
 }
