@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transcript_Processsor.Model
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transcript_Processor.App", "Transcript_Processor.App\Transcript_Processor.App.csproj", "{BC2A2D3D-7B57-4C4B-9812-2415E2E1E843}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transcript_Processor.Logics", "Transcript_Processor.Logics\Transcript_Processor.Logics.csproj", "{94462CC1-82CE-40AC-90FF-1A7184C145F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transcript_Processor.Logics", "Transcript_Processor.Logics\Transcript_Processor.Logics.csproj", "{94462CC1-82CE-40AC-90FF-1A7184C145F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

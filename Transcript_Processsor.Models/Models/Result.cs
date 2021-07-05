@@ -1,7 +1,7 @@
-﻿using Processor_s_Models.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Transcript_Processsor.Models.Entities;
 
 namespace Processor_s_Models.Models
 {
