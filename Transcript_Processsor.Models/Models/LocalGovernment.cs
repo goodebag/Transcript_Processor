@@ -19,7 +19,7 @@ namespace Liberty_Jadi.EntityModelAccess.Entity
         public string Local_Government_Name { get; set; }
         public string State_Id { get; set; }
     
-        public virtual STATE STATE { get; set; }
-        public virtual ICollection<PERSON> People { get; set; }
+        public virtual State STATE { get; set; }
+        public virtual ICollection<Person> People { get; set; }
     }
 }
