@@ -27,7 +27,7 @@ namespace Liberty_Jadi.EntityModelAccess.Entity
         public virtual PAYMENT PAYMENT { get; set; }
         public virtual STATE STATE { get; set; }
         public virtual STUDENT STUDENT { get; set; }
-        public virtual TRANSCRIPT_CLEARANCE_STATUS TRANSCRIPT_CLEARANCE_STATUS { get; set; }
-        public virtual TRANSCRIPT_STATUS TRANSCRIPT_STATUS { get; set; }
+        public virtual TranscriptClearanceStatus TRANSCRIPT_CLEARANCE_STATUS { get; set; }
+        public virtual TranscriptStatus TRANSCRIPT_STATUS { get; set; }
     }
 }

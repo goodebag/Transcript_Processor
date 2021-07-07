@@ -12,16 +12,12 @@ namespace Liberty_Jadi.EntityModelAccess.Entity
     using System;
     using System.Collections.Generic;
     
-    public partial class TRANSCRIPT_STATUS
+    public partial class TranscriptClearanceStatus
     {
-        public TRANSCRIPT_STATUS()
-        {
-            this.TRANSCRIPT_REQUEST = new HashSet<TRANSCRIPT_REQUEST>();
-        }
-    
-        public int Transcript_Status_Id { get; set; }
-        public string Transcript_Status_Name { get; set; }
-        public string Transcript_Status_Description { get; set; }
+
+        public int TranscriptclearanceStatusId { get; set; }
+        public string Transcriptclearance_Status_Name { get; set; }
+        public string Transcript_clearance_Status_Description { get; set; }
     
         public virtual ICollection<TRANSCRIPT_REQUEST> TRANSCRIPT_REQUEST { get; set; }
     }
