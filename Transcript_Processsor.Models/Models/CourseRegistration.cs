@@ -40,7 +40,7 @@ namespace Liberty_Jadi.EntityModelAccess.Entity
         public virtual SEMESTER SEMESTER { get; set; }
         public virtual SESSION SESSION { get; set; }
         public virtual STUDENT STUDENT { get; set; }
-        public virtual STUDENT_GRADE STUDENT_GRADE { get; set; }
+        public virtual StudentGrade STUDENT_GRADE { get; set; }
         public virtual USER USER { get; set; }
         public virtual ICollection<StudentResult> STUDENT_RESULT { get; set; }
     }

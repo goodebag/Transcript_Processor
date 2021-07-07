@@ -12,7 +12,7 @@ namespace Liberty_Jadi.EntityModelAccess.Entity
     using System;
     using System.Collections.Generic;
     
-    public partial class STUDENT_GRADE
+    public partial class StudentGrade
     {
     
         public int StudentGradeId { get; set; }
@@ -22,9 +22,8 @@ namespace Liberty_Jadi.EntityModelAccess.Entity
         public bool Activated { get; set; }
         public int Grade_Point { get; set; }
     
-        public virtual ICollection<COURSE_REGISTRATION> COURSE_REGISTRATION { get; set; }
-        public virtual ICollection<POSTGRADUATE_COURSE_REGISTRATION> POSTGRADUATE_COURSE_REGISTRATION { get; set; }
-        public virtual ICollection<STUDENT_RESULT> STUDENT_RESULT { get; set; }
+        public virtual ICollection<CourseRegistration> COURSE_REGISTRATION { get; set; }
+        public virtual ICollection<StudentResult> STUDENT_RESULT { get; set; }
         
     }
 }
