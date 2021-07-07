@@ -6,7 +6,7 @@ namespace Transcript_Processsor.Models.Models
 {
     public class Department
     {
-        public int DeptId { get; set; }
+        public int DepartmentId { get; set; }
         public string DeptName { get; set; }
 
         public int FacultyId { get; set; }

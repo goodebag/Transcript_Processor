@@ -26,7 +26,7 @@ namespace Liberty_Jadi.EntityModelAccess.Entity
         public int Student_Grade_Id { get; set; }
         public Nullable<double> Total_Score { get; set; }
         [ForeignKey("Course_Registration_Id")]
-        public virtual COURSE_REGISTRATION COURSE_REGISTRATION { get; set; }
+        public virtual CourseRegistration COURSE_REGISTRATION { get; set; }
         [ForeignKey("Student_Grade_Id")]
         public virtual STUDENT_GRADE STUDENT_GRADE { get; set; }
         [ForeignKey("Uploader_Id")]
