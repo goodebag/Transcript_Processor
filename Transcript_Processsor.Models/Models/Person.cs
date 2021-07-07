@@ -11,8 +11,10 @@ namespace Liberty_Jadi.EntityModelAccess.Entity
 {
     using System;
     using System.Collections.Generic;
-    
+    using static Transcript_Processsor.Models.Entities.EnumsClass;
+
     public partial class Person
+    { 
 
 
         public long PersonId { get; set; }
@@ -47,25 +49,11 @@ namespace Liberty_Jadi.EntityModelAccess.Entity
     
         public virtual COUNTRY COUNTRY { get; set; }
       
-        public virtual LOCAL_GOVERNMENT LOCAL_GOVERNMENT { get; set; }
+        public virtual LocalGovernment LOCAL_GOVERNMENT { get; set; }
      
-        public virtual ROLE ROLE { get; set; }
-        public virtual STATE STATE { get; set; }
-        public virtual TITLE TITLE { get; set; }
-        public virtual TRIBE TRIBE { get; set; }
-        public virtual POSTGRADUATE_APPLIED_COURSE POSTGRADUATE_APPLIED_COURSE { get; set; }
-        public virtual POSTGRADUATE_STUDENT POSTGRADUATE_STUDENT { get; set; }
-        public virtual PROSPECTIVE_APPLIED_COURSE PROSPECTIVE_APPLIED_COURSE { get; set; }
-        public virtual PROSPECTIVE_JAMB_INFORMATION PROSPECTIVE_JAMB_INFORMATION { get; set; }
-        public virtual ICollection<PROSPECTIVE_OLEVEL_RESULT> PROSPECTIVE_OLEVEL_RESULT { get; set; }
-        public virtual PROSPECTIVE_SECOND_APPLIED_COURSE PROSPECTIVE_SECOND_APPLIED_COURSE { get; set; }
-        public virtual PROSPECTIVE_STUDENT PROSPECTIVE_STUDENT { get; set; }
-        public virtual ICollection<PROSPECTIVE_STUDENT_PREVIOUS_EDUCATION> PROSPECTIVE_STUDENT_PREVIOUS_EDUCATION { get; set; }
-        public virtual ICollection<REFERAL_SYSTEM> REFERAL_SYSTEM { get; set; }
-        public virtual ICollection<REFEREE> REFEREEs { get; set; }
-        public virtual STAFF STAFF { get; set; }
-        public virtual ICollection<STAFF_RATING> STAFF_RATING { get; set; }
-        public virtual STUDENT STUDENT { get; set; }
+        public virtual Role ROLE { get; set; }
+        public virtual State STATE { get; set; }
+
         public virtual ICollection<USER> USERs { get; set; }
     }
 }
