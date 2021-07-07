@@ -14,7 +14,7 @@ namespace Liberty_Jadi.EntityModelAccess.Entity
     
     public partial class TranscriptRequest
     {
-        public long Transcript_Request_Id { get; set; }
+        public long TranscriptRequestId { get; set; }
         public long Student_id { get; set; }
         public Nullable<long> Payment_Id { get; set; }
         public System.DateTime Date_Requested { get; set; }

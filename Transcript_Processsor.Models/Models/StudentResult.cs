@@ -14,10 +14,10 @@ namespace Liberty_Jadi.EntityModelAccess.Entity
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
 
-    public partial class STUDENT_RESULT
+    public partial class StudentResult
     {
-        [Key]
-        public long Student_Result_Id { get; set; }
+
+        public long StudentResultId { get; set; }
         public long Course_Registration_Id { get; set; }
         public Nullable<double> Test_Score { get; set; }
         public Nullable<double> Exam_Score { get; set; }
