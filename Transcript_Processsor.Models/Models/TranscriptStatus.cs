@@ -19,6 +19,6 @@ namespace Liberty_Jadi.EntityModelAccess.Entity
         public string Transcript_Status_Name { get; set; }
         public string Transcript_Status_Description { get; set; }
     
-        public virtual ICollection<TRANSCRIPT_REQUEST> TRANSCRIPT_REQUEST { get; set; }
+        public virtual ICollection<TranscriptRequest> TRANSCRIPT_REQUEST { get; set; }
     }
 }

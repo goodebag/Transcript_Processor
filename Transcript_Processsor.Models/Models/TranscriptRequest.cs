@@ -12,7 +12,7 @@ namespace Liberty_Jadi.EntityModelAccess.Entity
     using System;
     using System.Collections.Generic;
     
-    public partial class TRANSCRIPT_REQUEST
+    public partial class TranscriptRequest
     {
         public long Transcript_Request_Id { get; set; }
         public long Student_id { get; set; }
