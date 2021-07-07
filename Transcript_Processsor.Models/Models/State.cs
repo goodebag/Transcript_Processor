@@ -18,7 +18,7 @@ namespace Liberty_Jadi.EntityModelAccess.Entity
         public string State_Name { get; set; }
         public int Nationality_Id { get; set; }
     
-        public virtual COUNTRY COUNTRY { get; set; }
+        public virtual Country COUNTRY { get; set; }
         public virtual ICollection<LocalGovernment> LOCAL_GOVERNMENT { get; set; }
         public virtual ICollection<Person> People { get; set; }
         public virtual ICollection<TranscriptRequest> TRANSCRIPT_REQUEST { get; set; }

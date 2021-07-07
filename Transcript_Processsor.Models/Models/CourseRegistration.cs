@@ -11,7 +11,9 @@ namespace Liberty_Jadi.EntityModelAccess.Entity
 {
     using System;
     using System.Collections.Generic;
-    
+    using Transcript_Processsor.Models.Entities;
+    using Transcript_Processsor.Models.Models;
+
     public partial class CourseRegistration
     {
     
@@ -34,14 +36,10 @@ namespace Liberty_Jadi.EntityModelAccess.Entity
         public string Absent_Reason { get; set; }
     
         public virtual Course COURSE { get; set; }
-        public virtual DEPARTMENT DEPARTMENT { get; set; }
-        public virtual LEVEL LEVEL { get; set; }
-        public virtual PROGRAMME PROGRAMME { get; set; }
-        public virtual SEMESTER SEMESTER { get; set; }
-        public virtual SESSION SESSION { get; set; }
-        public virtual STUDENT STUDENT { get; set; }
+        public virtual Department DEPARTMENT { get; set; }
+        public virtual Person STUDENT { get; set; }
         public virtual StudentGrade STUDENT_GRADE { get; set; }
-        public virtual USER USER { get; set; }
+        public virtual User USER { get; set; }
         public virtual ICollection<StudentResult> STUDENT_RESULT { get; set; }
     }
 }

@@ -11,6 +11,7 @@ namespace Liberty_Jadi.EntityModelAccess.Entity
 {
     using System;
     using System.Collections.Generic;
+    using Transcript_Processsor.Models.Entities;
     using static Transcript_Processsor.Models.Entities.EnumsClass;
 
     public partial class Person
@@ -47,13 +48,13 @@ namespace Liberty_Jadi.EntityModelAccess.Entity
         public string Family_Kindred { get; set; }
         public string Village { get; set; }
     
-        public virtual COUNTRY COUNTRY { get; set; }
+        public virtual Country COUNTRY { get; set; }
       
         public virtual LocalGovernment LOCAL_GOVERNMENT { get; set; }
      
         public virtual Role ROLE { get; set; }
         public virtual State STATE { get; set; }
 
-        public virtual ICollection<USER> USERs { get; set; }
+        public virtual ICollection<User> USERs { get; set; }
     }
 }

@@ -24,9 +24,8 @@ namespace Liberty_Jadi.EntityModelAccess.Entity
         public Nullable<int> Transcript_clearance_Status_Id { get; set; }
         public int Transcript_Status_Id { get; set; }
     
-        public virtual PAYMENT PAYMENT { get; set; }
-        public virtual STATE STATE { get; set; }
-        public virtual STUDENT STUDENT { get; set; }
+        public virtual State STATE { get; set; }
+        public virtual Person STUDENT { get; set; }
         public virtual TranscriptClearanceStatus TRANSCRIPT_CLEARANCE_STATUS { get; set; }
         public virtual TranscriptStatus TRANSCRIPT_STATUS { get; set; }
     }
