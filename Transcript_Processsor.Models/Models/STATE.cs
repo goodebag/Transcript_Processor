@@ -12,7 +12,7 @@ namespace Liberty_Jadi.EntityModelAccess.Entity
     using System;
     using System.Collections.Generic;
     
-    public partial class STATE
+    public partial class State
     {
         public string StateId { get; set; }
         public string State_Name { get; set; }
@@ -20,7 +20,7 @@ namespace Liberty_Jadi.EntityModelAccess.Entity
     
         public virtual COUNTRY COUNTRY { get; set; }
         public virtual ICollection<LOCAL_GOVERNMENT> LOCAL_GOVERNMENT { get; set; }
-        public virtual ICollection<PERSON> People { get; set; }
-        public virtual ICollection<TRANSCRIPT_REQUEST> TRANSCRIPT_REQUEST { get; set; }
+        public virtual ICollection<Person> People { get; set; }
+        public virtual ICollection<TranscriptRequest> TRANSCRIPT_REQUEST { get; set; }
     }
 }
